@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divorce Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Divorce Application Form</h2>
+    <form action="/submit-divorce-application" method="POST">
+        
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+        <label for="applicantName">Husband full name</label>
+        <input type="text" id="applicantName" name="applicantName" required>
+
+        
+        <label for="spouseName">Spouse's Full Name</label>
+        <input type="text" id="spouseName" name="spouseName" required>
+
+        
+        <!-- Marriage Details Section -->
+        <h3>Marriage Details</h3>
+        <label for="marriageDate">Date of Marriage</label>
+        <input type="date" id="marriageDate" name="marriageDate" required>
+
+        
+
+        <!-- Reason for Divorce Section -->
+        <h3>Reason for Divorce</h3>
+        <label for="divorceReason">Reason</label>
+        <select id="divorceReason" name="divorceReason" required>
+            <option value="incompatibility">Incompatibility</option>
+            <option value="irreconcilableDifferences">Irreconcilable Differences</option>
+            <option value="infidelity">Infidelity</option>
+            <option value="abandonment">Abandonment</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="additionalDetails">Additional Details</label>
+        <textarea id="additionalDetails" name="additionalDetails" rows="4" placeholder="Please provide additional details (if any)"></textarea>
+
+        <!-- Declaration Section -->
+        <h3>Declaration</h3>
+        <p>
+            I hereby declare that the information provided in this application is true and accurate to the best of my knowledge.
+        </p>
+        <label>
+            <input type="checkbox" name="declaration" required>
+            I agree to the above statement.
+        </label>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
