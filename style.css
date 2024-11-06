@@ -1,0 +1,198 @@
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(divoece1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 124vh;
+    top: 0%;
+    margin-top: 20px;   
+}
+.navbar{
+    width: 1400px;
+    height: 75px;
+    margin: 0%;
+    display: flex;
+    padding: 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff7200;
+    background-color: aqua;
+    font-size: 16px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 75px;
+}
+.nav-link {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-left: 30px;
+}
+.nav-link li {
+    margin: 0 20px;
+}
+.nav-link li a {
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    position: relative;
+}
+.nav-link li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+.nav-link li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+    justify-content: flex-end;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 4px solid #ff7200;
+    margin-top: 20px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 20px;
+    color: black;
+    font-size: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: right;
+}
+.btn:focus{
+    outline: none;
+
+}
+.srch:focus{
+    outline: none;
+}
+p{
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 400px;
+}
+.box{
+    background: white;
+    width: 450px;
+    height: 550px;
+    position: absolute;
+    top:20%;
+    right: 5%;
+    padding: 30px;
+}
+.box span{
+    color: #e84393;
+    cursor: pointer;
+}
+form{
+    width: 100%;
+}
+form input[type="text"]{
+    width: 100%;
+    padding: 20px 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background: rgba(0,0,0,0.1);  
+    color: black; 
+}
+form input[type="submit"]{
+    width: 100%;
+    padding: 20px 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background: #e84393;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+form input[type="submit"]:hover{
+    background: transparent;
+    border: 1px solid grey;
+    color: black;
+}
+.htext{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    max-width:200px;
+    color: white;
+}
+.htext span{
+    color: aqua;
+}
+.htext a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-spacing: 2px;
+    border-radius: 8px;
+    background-color: red;
+    top: 10%;
+    left: 2%;
+}
+.htext a:hover{
+    background-color: red;
+}
+.htext p{
+    font-size: 20px;
+    color: rgb(74, 234, 34);
+    font-weight: bold;
+}
