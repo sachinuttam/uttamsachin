@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrimonial Website</title>
+  <style>
+      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.btn-register {
+  background-color: #f76c6c;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #f76c6c;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.about, .services, .success-stories, .footer {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+  font-size: 2.5em;
+  color: #f76c6c;
+  margin-bottom: 10px;
+}
+
+
+.story-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.story-card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.social-icons a {
+  color: #f76c6c;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">MatchMaker</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#success-stories">Success Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn-register">Register</a>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Find Your Perfect Match</h1>
+      <p>Join thousands who found love through our trusted platform.</p>
+      <a href="#" class="btn-primary">Get Started</a>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are committed to helping individuals find meaningful relationships. Our platform uses advanced matching algorithms and personalized support to ensure a successful experience.</p>
+    </div>
+  </section>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <i class="fas fa-heart"></i>
+          <h3>Profile Matching</h3>
+          <p>Connect with profiles based on your preferences and compatibility.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Compatibility Test</h3>
+          <p>Discover deeper compatibility with our advanced testing tools.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-comments"></i>
+          <h3>Relationship Counseling</h3>
+          <p>Receive expert guidance for building successful relationships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="success-stories" class="success-stories">
+    <div class="container">
+      <h2>Success Stories</h2>
+      <p>Hear from couples who found love on our platform.</p>
+      <div class="story-cards">
+        <div class="story-card">
+          <p>"We met on MatchMaker and instantly connected. Now we’re happily married!"</p>
+          <h4>- Anna & John</h4>
+        </div>
+        <div class="story-card">
+          <p>"Thanks to this platform, I found my soulmate. The experience was amazing."</p>
+          <h4>- Rhea & Amit</h4>
+        </div>
+        <div class="story-card">
+          <p>"With MatchMaker's help, I found my perfect match. Highly recommended!"</p>
+          <h4>- Sarah & Liam</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <h3>MatchMaker</h3>
+      <p>Your trusted partner in finding the right match. Connect with us on social media.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>&copy; 2023 MatchMaker. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
