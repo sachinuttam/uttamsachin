@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>     
+#services {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+    .service-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    #services h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+    }
+    #services p {
+      color: #777;
+      font-size: 1em;
+      margin-bottom: 40px;
+    }
+    .service-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .service-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      padding: 20px;
+      margin: 10px;      
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card i {
+      font-size: 2.5em;
+      color: #f76c6c;
+        margin-bottom: 10px;
+      }
+      .service-card h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .service-card p {
+        color: #555;
+        font-size: 0.9em;
+      }
+    </style>
+</head>
+<body>
+<section id="services">
+    <div class="service-container">
+      <h2>Our Services</h2>
+      <p>We offer a range of services to help you find the perfect match and build lasting relationships.</p>
+      <div class="service-cards">
+        <div class="service-card">
+          <i class="fas fa-heart"></i>
+          <h3>Profile Matching</h3>
+          <p>Our advanced matching algorithms connect you with compatible profiles based on your preferences.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Compatibility Test</h3>
+          <p>Take our compatibility tests to gain deeper insights into your ideal partner's traits and preferences.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-comments"></i>
+          <h3>Relationship Counseling</h3>
+          <p>Our expert counselors provide guidance to help you build a healthy and successful relationship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
